@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Controls.Hosting;
 
 namespace MauiMap;
 
