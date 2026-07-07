@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:maps="http://schemas.microsoft.com/dotnet/2021/maui/maps"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiMap.MainPage">
 
@@ -23,6 +24,10 @@
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <maps:Map
+                HeightRequest="300"
+                IsEnabled="{OnPlatform false, iOS=true, Android=true}" />
 
             <Button
                 x:Name="CounterBtn"
